@@ -44,7 +44,7 @@ async def on_message(message):
 
 access_token = os.environ[ACCESS_TOKEN]
         
-client.run(access_token)
+client.run("NTc5MDk2ODM5MDU2NTIzMjc1.XN9ngQ.2ZcMUcZbHrNYZgPmjFizMVjvx44")
 
 #@client.event
 #async def on_ready():
