@@ -38,13 +38,13 @@ async def on_message(message):
         #embed.add_field(name="설빙아 안녕!", value = "안녕! 설빙!", inline = True)
         #embed.set_footer(text="설빙봇 by redwikitv#0345 문의 및 제안은 여기로!")
         #await client.send_message(message.channel, embed=embed)
-        await client.say(embed=embed)
+        #await client.say(embed=embed)
     if message.content.startswith("md 테스트"):
         await message.channel.send("```s hello \nwtf ```")
 
-access_token = os.environ[ACCESS_TOKEN]
-        
-client.run("NTc5MDk2ODM5MDU2NTIzMjc1.XN9ngQ.2ZcMUcZbHrNYZgPmjFizMVjvx44")
+access_token = os.environ["BOT_TOKEN"]
+
+client.run(access_token)
 
 #@client.event
 #async def on_ready():
