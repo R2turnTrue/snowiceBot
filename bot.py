@@ -1,5 +1,6 @@
 import discord
 import asyncio
+import os
 
 #VDV
 #DSFFD
@@ -41,8 +42,9 @@ async def on_message(message):
     if message.content.startswith("md 테스트"):
         await message.channel.send("```s hello \nwtf ```")
 
-
-client.run("NTc5MDk2ODM5MDU2NTIzMjc1.XN9R8w.HEI71JaEzdp0dazt6Mfkc9SlQVo")
+access_token = os.environ[ACCESS_TOKEN]
+        
+client.run(access_token)
 
 #@client.event
 #async def on_ready():
